@@ -1,0 +1,25 @@
+.faq-header {
+	display: inline-flex;
+	align-items: center;
+	color: currentColor;
+	text-decoration: none;
+}
+
+.faq-header:hover {
+	color: #2196f3;
+}
+
+.faq-header::before,
+.faq-header::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+}
+
+.faq-header::before {
+	display: block;
+	margin-right: 10px;
+	margin-left: 16px;
+	background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+}
