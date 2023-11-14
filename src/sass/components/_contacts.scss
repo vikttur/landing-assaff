@@ -1,7 +1,5 @@
 .contact {
 	@extend .flex-container;
-	// display:flex;
-	// justify-content: center;
 
 	@media screen and (min-width: 1200px) {
 		gap: 50px;

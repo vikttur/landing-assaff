@@ -8,7 +8,7 @@
 	cursor: pointer;
 }
 
-%button-main {
+%button-main {//
 	@extend %button;
 	background-color: var(--color-accent);
 	
