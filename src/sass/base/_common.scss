@@ -1,47 +1,30 @@
 // *,
 // *::before,
 // *::after {
-//   cursor: url('../images/cursors/cursor-main.png'), auto;
+// 	cursor: pointer;
 // }
 
-// body {
-//   font-family: 'Montserrat', sans-serif;
-//   font-size: 12px;
-//   line-height: 1.76;
-//   letter-spacing: 0.04em;
-//   background-color: var(--main-gradient-color);
-// }
+body {
+	background-color: var(--color-bgr-head);
 
-// img {
-//   max-width: 100%;
-//   height: auto;
-//   display: block;
-// }
+	font-family: var(--font-main);
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-main);
+}
 
-// a {
-//   color: inherit;
-//   cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+img {
+	display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-//   & * {
-//     cursor: url('../images/cursors/cursor-pointer.png'), pointer;
-//   }
-// }
+button {
+  display: inline-block;
+  
+}
 
-// button,
-// input,
-// textarea {
-//   padding-top: 0;
-//   padding-bottom: 0;
-//   padding-left: 0;
-//   padding-right: 0;
-//   cursor: url('../images/cursors/cursor-pointer.png'), pointer;
-//   border: none;
-//   background-color: inherit;
-
-//   // & * {
-//     cursor: url('../images/cursors/cursor-pointer.png'), pointer;
-//   // }
-// }
 
 // .icecream-background {
 //   background-position: center;

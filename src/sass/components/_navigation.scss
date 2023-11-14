@@ -1,0 +1,28 @@
+.navigation {
+	&__item {
+		display: block;
+	}
+
+	&__item:not(:first-child) {
+		// margin-right: 50px;
+		padding-left: 50px;
+	}
+
+	&__link {
+		// @extend .link;
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: var(--color-header);
+	}
+	
+	@media screen and (min-width: 768px) {
+			display: flex;
+			padding: 0;
+			// margin: 0;
+			justify-content: center;
+	}
+}

@@ -1,15 +1,15 @@
 :root {
 	--color-accent: #2196f3;
 	--color-btn-active: #178ae8;
-	--color-main: #757575;
-	--color-header: #212121;
+	--color-main: #757575;//
+	--color-header: #212121;//
 	--color-logo: #000000;
-	--color-bgr-head: #ffffff;
+	--color-bgr-head: #ffffff;//
 	--color-bgr-main: #f5f5f5;
-	--color-bgr-alternative: #f5f4fa;
+	--color-bgr-alternative: #f5f4fa; 
 	--color-bgr-hero: #c4c4c4;
 	--color-bgr-footer: #2f303a;
-	--color-border-section: #ececec;
+	--color-border-section: #ececec;//
 	--color-border-card: #eeeeee;
 	--color-border-client: #afb1b8;
 	--color-footer-contact: #ffffff99;
@@ -17,20 +17,12 @@
 	--color-bgr-icon: #ffffff1a;
 	--color-icon: #afb1b8;
 
+	--font-main: "Roboto", sans-serif;//
+	--font-logo: "Raleway", sans-serif;
+
 	--time-animation: 250ms;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-$font-main: "Roboto", sans-serif;
-$font-logo: "Raleway", sans-serif;
-
-// breakpoints
-
-$mini-mobile-max: 319px;
-$mini-mobile-min: 320px;
-$mobile-max: 479px;
-$mobile-min: 480px;
-$tablet-max: 767px;
-$tablet-min: 768px;
-$desktop-max: 1199px;
-$desktop-min: 1200px;
+// $mobile-padding: 60px;
+// $desktop-padding: 94px;
