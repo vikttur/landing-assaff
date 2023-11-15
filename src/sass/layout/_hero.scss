@@ -3,6 +3,10 @@
 	padding: 118px 0;
 
 	background-color: var(--color-bgr-hero);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; //contain
+	text-align: center;
 
 	background-image: linear-gradient(to right,
 			var(--color-gradient),
@@ -20,11 +24,6 @@
 					url("/src/images/hero/hero_480@2x.jpg");
 			}
 	}
-
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; //contain
-	text-align: center;
 
 	&__heading {
 		padding-bottom: 30px;
