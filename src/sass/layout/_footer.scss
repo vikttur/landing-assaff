@@ -1,3 +1,85 @@
-.der {
-	height: 5px;
+.footer {
+	padding: 10px;
+	background-color: var(--color-bgr-footer);
+	text-align: center;
+
+	&__address {
+		padding-bottom: 40px;
+	}
+
+	&__container {
+		padding: 20px;
+	}
+
+	&__logo {
+		padding-bottom: 20px;
+	}
+
+	&__header {
+		display: block;
+		padding-bottom: 20px;
+	
+		font-weight: 700;
+		line-height: 1.14;
+		text-transform: uppercase;
+		color: var(--color-bgr-card);
+	}
+
+	&__link-address {
+		color: var(--color-bgr-head);
+
+		transition:
+			color var(--time-animation) var(--timing-function);
+		}
+
+	&__link-address:hover,
+	&__link-address:focus {
+		color: var(--color-accent);
+	}
+
+	&__text {
+		color: var(--color-bgr-head);
+	}
+
+	&__contact {
+		color: var(--color-footer-contact);
+	}
+
+	&__link-icon {
+		background-color: var(--color-bgr-icon);
+		color: var(--color-bgr-head);
+
+		transition:
+			background-color var(--time-animation) var(--timing-function),
+			color var(--time-animation) var(--timing-function);
+	}
+
+	&__link-icon:hover,
+	&__link-icon:focus {
+		background-color: var(--color-accent);
+	}
+
+	@media screen and (min-width: 768px) {
+		&__container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: baseline;
+		}
+
+		&__address {
+			padding-bottom: 0;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
+}
+
+.social__icon {
+	.footer__link-icon:hover &,
+	.footer__link-icon:focus & {
+		fill: var(--color-bgr-head);
+	}
 }
