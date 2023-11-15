@@ -34,7 +34,8 @@
 		line-height: 1.62;
 		letter-spacing: 1.56px;
 		text-transform: uppercase;
-		color: var(--color-bgr-head);
+		// color: var(--color-bgr-head);
+		color: var(--color-bgr-card);
 
 		@media screen and (min-width: 1200px) {
 			font-size: 44px;
