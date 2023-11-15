@@ -42,6 +42,8 @@
 	}
 
 	&__contact {
+		display: inline-block;
+		padding-top: 6px;
 		color: var(--color-footer-contact);
 	}
 
@@ -65,6 +67,7 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: baseline;
+			text-align: left;
 		}
 
 		&__address {
@@ -72,9 +75,9 @@
 		}
 	}
 
-	@media screen and (min-width: 1200px) {
-		text-align: left;
-	}
+	// @media screen and (min-width: 1200px) {
+	// 	text-align: left;
+	// }
 }
 
 .social__icon {
