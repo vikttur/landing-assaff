@@ -34,44 +34,44 @@ button {
 	color: var(--color-header);
 }
 
+.background-img {
+  background-position: center;
+  background-attachment: fixed;
 
-// .icecream-background {
-//   background-position: center;
-//   background-attachment: fixed;
+  @media screen and (max-width: 767px) {
+    background-image: url('/src/images/background/img-bgr-940.jpg');
+    background-size: 100vw;
 
-//   @media screen and (max-width: $tablet-max) {
-//     background-image: url('../images/background/background-mobile.jpg');
-//     background-size: 885px 1242px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-940.jpg');
+    }
+  }
 
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/background/background-mobile@2x.jpg');
-//     }
-//   }
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/background/img-bgr-1200.jpg');
+    background-size: 100vw;
 
-//   @media screen and (min-width: $tablet-min) {
-//     background-image: url('../images/background/background-tablet.jpg');
-//     background-size: 963px 1017px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-1200.jpg');
+    }
+  }
 
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/background/background-tablet@2x.jpg');
-//     }
-//   }
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/images/background/img-bgr-1200.jpg');
+    background-size: 1300px 1350px;
+		background-size: 100vw;
 
-//   @media screen and (min-width: $desktop-min) {
-//     background-image: url('../images/background/background-desktop.jpg');
-//     background-size: 1300px 1350px;
-
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/background/background-desktop@2x.jpg');
-//     }
-//   }
-// }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-1200.jpg');
+    }
+  }
+}
