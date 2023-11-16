@@ -5,29 +5,17 @@
 	&__container {
 		display: flex;
 		align-items: center;
-
-		@media screen and (max-width: 767px) {
-			justify-content: space-between;
-		}
 	}
 
 	&__nav {
 		display: flex;
 		align-items: center;
-		// padding: 0;
-		// margin: 0;
 	}
 
 	&__navigation {
 		@media screen and (max-width: 767px) {
 			display: none;
 		}
-
-		// margin-left: 88px;
-
-		// @media screen and (min-width: 1200px) {
-		// 	margin-left: 93px;
-		// }
 	}
 
 	&__logo {
@@ -39,14 +27,13 @@
 	}
 
 	&__contact {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+
 		@media screen and (max-width: 767px) {
 			display: none;
 		}
-
-		display: flex;
-		flex-direction: column;
-		// margin: 0;
-		margin-left: auto;
 
 		@media screen and (min-width: 1200px) {
 			flex-direction: row;

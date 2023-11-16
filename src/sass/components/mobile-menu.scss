@@ -1,0 +1,149 @@
+.menu-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// margin: 0;
+	margin-left: auto;
+	padding: 10px 0;
+	min-height: 40px;
+	min-width: 40px;
+
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+
+	color: var(--color-header);
+	transition:
+		color var(--time-animation) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--color-accent);
+	}
+
+	&__icon {
+		fill: currentColor;
+	}
+}
+
+.menu-container {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 48px 40px;
+
+	// font-weight: 500;
+	// letter-spacing: 0.02em;
+
+	background-color: var(--color-bgr-head);
+	z-index: 999;
+
+	transform: translateX(100%);
+	transition: transform var(--time-animation) ease-in-out;
+
+	&.is-open {
+		transform: translateX(0);
+	}
+
+	// &__list {
+	// 	@extend %list;
+	// }
+
+	&__item:not(:last-child) {
+		margin-bottom: 32px;
+	}
+
+	&__item:last-child {
+		margin-bottom: 64px;
+	}
+
+	&__link {
+		color: var(--color-header);
+	}
+
+	&__contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__text-nav {
+		font-size: 40px;
+		line-height: 1.18;
+	}
+
+	&__text-tel {
+		font-size: 34px;
+		line-height: 1.18;
+		color: var(--color-accent);
+
+		@media screen and (max-width: 480px) {
+			font-size: 26px;
+			line-height: 1.18;
+		}
+	}
+
+	&__text-mail {
+		font-size: 24px;
+		line-height: 1.17;
+		color: var(--color-main);
+	}
+
+	// & .menu-toggle {
+	// 	position: absolute;
+	// 	top: 10px;
+	// 	right: 15px;
+	// }
+}
+
+.social-media {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: baseline;
+		position: relative;
+
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.22;
+		letter-spacing: 0.02em;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__item:not(:first-child) {
+		margin-left: 10px;
+	}
+
+	&__item:nth-child(n+2)::after {
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: rgba(33, 33, 33, 0.2);
+		width: 22px;
+		height: 1px;
+		top: 90%;
+		left: -10%;
+		transform-origin: bottom left;
+		transform: rotate(-90deg);
+	}
+	
+	&__link {
+		// @extend .link;
+		color: var(--color-accent);
+	}
+}
