@@ -1,0 +1,4 @@
+var e,t,n,o;e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),n=document.querySelector(".js-close-menu"),o=function(){var n="true"===t.getAttribute("aria-expanded");t.setAttribute("aria-expanded",!n),e.classList.toggle("is-open"),bodyScrollLock[n?"enableBodyScroll":"disableBodyScroll"](document.body)},t.addEventListener("click",o),n.addEventListener("click",o),e.addEventListener("click",function(e){e.target.classList.contains("menu-container__link")&&o()}),// Close the mobile menu on wider screens if the device orientation changes
+window.matchMedia("(min-width: 768px)").addEventListener("change",function(n){n.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))});//# sourceMappingURL=index.f686b5e2.js.map
+
+//# sourceMappingURL=index.f686b5e2.js.map
