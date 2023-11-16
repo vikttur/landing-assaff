@@ -1,9 +1,3 @@
-// *,
-// *::before,
-// *::after {
-// 	cursor: pointer;
-// }
-
 body {
 	background-color: var(--color-bgr-main);
 
@@ -25,7 +19,7 @@ button {
   
 }
 
-.section-heading {//
+.section-heading {
 	padding-bottom: 30px;
 	font-weight: 700;
 	font-size: 28px;

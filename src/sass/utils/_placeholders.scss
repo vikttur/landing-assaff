@@ -8,7 +8,7 @@
 	cursor: pointer;
 }
 
-%button-main {//
+%button-main {
 	@extend %button;
 	background-color: var(--color-accent);
 	
@@ -20,17 +20,17 @@
 	border: none;
 }
 
-%visually-hidden {
-	position: absolute;
-	padding: 0;
-	margin: -1px;
+// %visually-hidden {
+// 	position: absolute;
+// 	padding: 0;
+// 	margin: -1px;
 
-	width: 1px;
-	height: 1px;
+// 	width: 1px;
+// 	height: 1px;
 
-	border: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
+// 	border: 0;
+// 	white-space: nowrap;
+// 	clip-path: inset(100%);
+// 	clip: rect(0 0 0 0);
+// 	overflow: hidden;
+// }

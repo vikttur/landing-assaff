@@ -1,5 +1,6 @@
 .contact {
-	@extend .flex-container;
+	display: flex;
+	justify-content: center;
 
 	@media screen and (min-width: 1200px) {
 		gap: 50px;
@@ -21,8 +22,6 @@
 		padding-top: 21px;
 
 		@media screen and (min-width: 1200px) {
-			// margin-bottom: 0;
-			// margin-right: 50px;
 			padding-top: 0;
 		}
 	}
@@ -36,8 +35,6 @@
 	}
 
 	&__link {
-		@extend .link;
-
 		@media screen and (min-width: 1200px) {
 			padding-top: 32px;
 			padding-bottom: 32px;
@@ -73,8 +70,8 @@
 		fill: currentColor;
 	}
 
-	// &__link:hover,
-	// &__link:focus {
-	// 	color: var(--color-accent);
-	// }
+	&__link:hover,
+	&__link:focus {
+		color: var(--color-accent);
+	}
 }

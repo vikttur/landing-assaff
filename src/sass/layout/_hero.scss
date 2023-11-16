@@ -1,12 +1,11 @@
 .hero {
 	max-width: 100%;
-	// padding: 118px 0;
 	padding: 20px;
 
 	background-color: var(--color-bgr-hero);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: cover; //contain
+	background-size: cover; 
 	text-align: center;
 
 	background-image: linear-gradient(to right,
@@ -34,7 +33,6 @@
 		line-height: 1.62;
 		letter-spacing: 1.56px;
 		text-transform: uppercase;
-		// color: var(--color-bgr-head);
 		color: var(--color-bgr-card);
 
 		@media screen and (min-width: 1200px) {
@@ -87,7 +85,6 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-		// padding: 200px 0;
 		padding-top: 30px;
 		height: 600px;
 

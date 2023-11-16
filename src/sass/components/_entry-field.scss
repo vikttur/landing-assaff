@@ -1,0 +1,76 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		position: relative;		
+		width: 100%;
+	}
+
+	&__input {
+		padding: 11px;
+		padding-left: 42px;
+		
+		border: 1px solid var(--color-header);
+	}
+
+	&__active {
+		border-radius: 4px;
+		
+		transition:
+			border var(--time-animation) var(--timing-function);
+	}
+
+	&__active:hover,
+	&__active:focus {
+		outline: none;
+		border: 1px solid var(--color-accent);
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+
+		fill: var(--color-header);
+		transform: translateY(-50%);
+
+		transition:
+			fill var(--time-animation) var(--timing-function);
+	}
+
+	&__placeholder {
+		padding: 11px 16px;
+
+		border: 1px solid Var(--color-header);
+		border-radius: 4px;
+
+		resize: none;
+		transition:
+			border var(--time-animation) var(--timing-function);
+	}
+
+	&__placeholder::placeholder {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+		color: #75757580;
+	}
+
+	@media screen and (min-width: 1200px) {
+		&__placeholder::placeholder {
+			font-size: 12px;
+			line-height: 1.17;
+		}
+	}
+}
+
+.field__icon {
+	.field__input:hover+&,
+	.field__input:focus+& {
+		fill: var(--color-accent);
+	}
+}
