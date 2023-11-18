@@ -5,13 +5,13 @@ new Swiper('.text-slider', {
 		draggable: true,
 	},
 	autoplay: {
-		delay: 3500,
+		delay: 4500,
 		stopOnLastSlide: true,
 		disableOnInteraction: false,
 	},
 	grabCursor: true,
 	slideToClickedSlide: true,
-	speed: 2000,
+	speed: 1500,
 	// effect: 'fade',
 	// effect: 'flip',
 	// flipEffect: {
