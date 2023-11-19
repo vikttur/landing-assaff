@@ -1,0 +1,3 @@
+document.querySelector("[data-one-spoiler]").addEventListener("click",function(e){var t=e.target;if(t.hasAttribute("data-spoiler")||t.closest("[data-spoiler]")){var a,l=t.hasAttribute("[data-spoiler]")?t:t.closest("data-spoiler"),s=l.closest("[data-spoiler]"),i=!!s.hasAttribute("data-one-spoiler");s.querySelectorAll(".slide").length||(i&&!l.classList.contains("_active")&&(a=s.querySelector("[data-spoiler]._active"))&&(a.classList.remove("_active"),_slideUp(a.nextElementSibling,500)),l.classlist.toggle("_active"),_slideToggle(l.nextElementSibling,500)),e.preventDefault()}});//# sourceMappingURL=index.d9d5fc87.js.map
+
+//# sourceMappingURL=index.d9d5fc87.js.map
