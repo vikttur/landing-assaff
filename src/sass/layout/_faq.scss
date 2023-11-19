@@ -1,25 +1,80 @@
-.faq-header {
-	display: inline-flex;
-	align-items: center;
-	color: currentColor;
-	text-decoration: none;
+.faq {
+	// &__list {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	gap: 12px;
+	// }
+
+	&__item{
+		padding: 12px;
+		color: var(--color-header);
+	}
+
+	&__title {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		padding: 10px;
+		width: 100%;
+		background-color: var(--color-accent);
+
+		font-size:  24px;
+		line-height: 1.19;
+		color: var(--color-header);
+	}
+
+	&__text {
+		padding: 10px;
+		padding-left: 40px;
+		font-size:  18px;
+		line-height: 1.3;
+		background-color: var(--color-bgr-slider);
+	}
 }
 
-.faq-header:hover {
-	color: #2196f3;
+.faq__list._init .faq__title {
+	cursor: pointer;
 }
 
-.faq-header::before,
-.faq-header::after {
+.faq__list._init .faq__title::before,
+.faq__list._init .faq__title::after {
 	content: "";
-	width: 24px;
-	height: 24px;
-	background-size: contain;
+	width: 20px;
+	height: 1px;
+	background-color:  var(--color-header);
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	transition: transform .3s ease 0s;
 }
 
-.faq-header::before {
-	display: block;
-	margin-right: 10px;
-	margin-left: 16px;
-	background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+.faq__list._init .faq__title::after {
+	transform: rotate(-90deg);
 }
+
+.faq__list._init .faq__title.active::after {
+	transform: rotate(0deg);
+}
+
+
+.faq__title {
+	&:hover {
+		color: var(--color-accent);
+	}
+
+	// &::before,
+	// &::after {
+	// 	content: "";
+	// 	width: 24px;
+	// 	height: 24px;
+	// 	background-size: contain;
+	// }
+
+	// &::before {
+	// 	display: block;
+	// 	margin-right: 10px;
+	// 	margin-left: 16px;
+	// 	background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+	// }
+}
+ 
