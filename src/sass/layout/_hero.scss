@@ -29,14 +29,20 @@
 		padding-bottom: 120px;
 
 		font-weight: 900;
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 1.62;
 		letter-spacing: 1.56px;
 		text-transform: uppercase;
 		color: var(--color-bgr-card);
 
+		@media screen and (min-width: 768px) {
+			font-size: 30px;
+			line-height: 1.17;
+			letter-spacing: 2.64px;
+		}
+
 		@media screen and (min-width: 1200px) {
-			font-size: 44px;
+			font-size: 42px;
 			line-height: 1.36;
 			letter-spacing: 2.64px;
 		}
