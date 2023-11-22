@@ -3,38 +3,19 @@
 	<div class="container header__container">
 		<img src="./images/logo.svg" alt="" width="30" height="30" alt="гітара"/>
 
-		<nav class="header__nav">
-			<a href="./index.html" class="header__logo logo">ASSAFF</a>
-			<ul class="navigation header__navigation">
-				<li class="navigation__item"><a href="#team" class="navigation__link">Про нас</a></li>
-				<li class="navigation__item"><a href="#gallery" class="navigation__link">Галерея</a></li>
-				<li class="navigation__item"><a href="#faq" class="navigation__link">FAQ</a></li>
-				<li class="navigation__item"><a href="#comments" class="navigation__link">Відгуки</a></li>
-			</ul>
-		</nav>
-		<ul class="contact header__contact">
-			<li class="contact__item">
-				<a href="mailto:info@assaf.com" class="contact__link contact__text contact__bgr-icon">
-					<svg class="contact__icon" width="24" height="18">
-						<use href="./images/icons.svg#envelope"></use>
-					</svg>
-					info@assaff.com
-				</a>
-			</li>
-			<li class="contact__item">
-				<a href="tel:+380961111111" class="contact__link contact__text contact__bgr-icon">
-					<svg class="contact__icon" width="16" height="24">
-						<use href="./images/icons.svg#smartphone"></use>
-					</svg>
-					+38 096 111 11 11
-				</a>
-			</li>
-		</ul>
+		<div class="nav-and-contact">
+			<nav class="header__nav">
+				<div class="header-logo">
+					<include src="./partials/fragments/logo.html"></include>
+				</div>
 
-		<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-			<svg class="menu-toggle__icon" width="40" height="40" aria-label="кнопка відкриття мобільного меню">
-				<use href="./images/icons.svg#menu-open"></use>
-			</svg>
-		</button>
+				<div class="header__navigation">
+					<include src="./partials/fragments/navigation.html"></include>
+				</div>
+			</nav>
+			<include src="./partials/contacts.html"></include>
+		</div>
+
+		<include src="./partials/fragments/burger-button.html"></include>
 	</div>
 </header>

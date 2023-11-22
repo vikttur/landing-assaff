@@ -9,20 +9,12 @@
 
 	&__nav {
 		display: flex;
-		align-items: center;
+	 	align-items: center;
 	}
 
 	&__navigation {
 		@media screen and (max-width: 767px) {
 			display: none;
-		}
-	}
-
-	&__logo {
-		padding-right: 88px;
-
-		@media screen and (min-width: 1200px) {
-			padding-right: 93px;
 		}
 	}
 
