@@ -1,4 +1,4 @@
-new Swiper('.text-slider', {
+new Swiper('.comments-slider', {
 	loop: true,
 	scrollbar: {
 		el: '.swiper-scrollbar',

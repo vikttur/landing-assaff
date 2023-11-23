@@ -1,5 +1,5 @@
 .team {
-	&__grid {
+	&__list {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -61,7 +61,7 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		&__grid {
+		&__list {
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
@@ -72,7 +72,7 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-		&__grid {
+		&__list {
 			flex-wrap: nowrap;
 		}
 	}

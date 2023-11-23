@@ -1,4 +1,4 @@
-new Swiper('.image-slider', {
+new Swiper('.gallery-slider', {
 	loop: true,
 	// navigation: {
 	// 	prevEl: 'swiper-button-prev',
