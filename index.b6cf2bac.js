@@ -1,4 +1,4 @@
-new Swiper(".image-slider",{loop:!0,// navigation: {
+new Swiper(".gallery-slider",{loop:!0,// navigation: {
 // 	prevEl: 'swiper-button-prev',
 // 	nextEl: 'swiper-button-next',
 // },
@@ -27,6 +27,6 @@ grabCursor:!0,slideToClickedSlide:!0,speed:1500,// effect: 'fade',
 // 	slideShadows: true,
 // 	limitRotation: true,
 // },
-effect:"cube",cubeEffect:{slideShadows:!0,shadow:!0,shadowOffset:20,shadowScale:.9}});//# sourceMappingURL=index.00514e75.js.map
+effect:"cube",cubeEffect:{slideShadows:!0,shadow:!0,shadowOffset:20,shadowScale:.9}});//# sourceMappingURL=index.b6cf2bac.js.map
 
-//# sourceMappingURL=index.00514e75.js.map
+//# sourceMappingURL=index.b6cf2bac.js.map
