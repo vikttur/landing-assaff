@@ -16,7 +16,6 @@ img {
 
 button {
   display: inline-block;
-  
 }
 
 .section-heading {
@@ -44,7 +43,6 @@ button {
 
 .background-img {
   background-position: center;
-  background-attachment: fixed;
 
   @media screen and (max-width: 767px) {
     background-image: url('/src/images/background/img-bgr-940.jpg');
