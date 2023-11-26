@@ -1,4 +1,8 @@
 .team {
+	&__container {
+		@extend %container;
+	}
+	
 	&__list {
 		display: flex;
 		flex-direction: column;

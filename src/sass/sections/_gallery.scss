@@ -11,7 +11,11 @@
 		width: 1000px;
 		height: 600px;
 	}
-		
+
+	&__container {
+		@extend %container;
+	}
+	
 	&__image {
 		display: flex;
 		justify-content: center;

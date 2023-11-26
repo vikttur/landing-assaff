@@ -1,3 +1,9 @@
+.comments {
+	&__container {
+		@extend %container;
+	}
+}
+
 .comments-slider {
   width: 440px;
   height: 320px;
