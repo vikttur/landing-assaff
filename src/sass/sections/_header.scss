@@ -11,6 +11,14 @@
 		display: flex;
 	 	align-items: center;
 	}
+
+	&__btn-open {
+		@extend %menu-toggle;
+	}
+
+	&__icon {
+		fill: currentColor;
+	}
 }
 
 .header__nav .navigation {
