@@ -1,4 +1,6 @@
 .faq {
+	@extend %section;
+	
 	// &__list {
 	// 	display: flex;
 	// 	flex-direction: column;

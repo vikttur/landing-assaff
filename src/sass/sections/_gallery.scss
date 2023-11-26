@@ -1,3 +1,7 @@
+.gallery {
+	@extend %section;
+}
+
 .gallery-slider {
   width: 380px;
   height: 240px;

@@ -1,4 +1,6 @@
 .services {
+	@extend %section;
+	
 	&__list {
 		display: flex;
 		justify-content: center;

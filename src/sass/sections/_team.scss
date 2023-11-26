@@ -1,4 +1,6 @@
 .team {
+	@extend %section;
+	
 	&__container {
 		@extend %container;
 	}

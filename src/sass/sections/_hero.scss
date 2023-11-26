@@ -1,4 +1,6 @@
 .hero {
+	@extend %section;
+
 	max-width: 100%;
 	padding: 20px;
 
