@@ -66,32 +66,33 @@
 		color: var(--color-header);
 	}
 
-	// &__contact {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// }
-
 	&__text-nav {
 		font-size: 30px;
 		line-height: 1.18;
-	}
-
-	&__text-tel {//
-		font-size: 20px;
-		line-height: 1.18;
-		color: var(--color-accent);
-	}
-
-	&__text-mail {//
-		font-size: 20px;
-		line-height: 1.17;
-		color: var(--color-main);
 	}
 
 	& .menu-toggle {
 		position: absolute;
 		top: 16px;
 		right: 16px;
+	}
+}
+
+.menu-container .contacts {
+	@media screen and (max-width: 480px) {
+		flex-direction: column-reverse;
+
+		&__font-tel {
+			font-size: 20px;
+			line-height: 1.18;
+			color: var(--color-accent);
+		}
+
+		&__font-mail {
+			font-size: 20px;
+			line-height: 1.17;
+			color: var(--color-main);
+		}
 	}
 }
 

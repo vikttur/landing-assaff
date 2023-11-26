@@ -1,4 +1,4 @@
-.contact {
+.contacts {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -69,9 +69,13 @@
 	}
 
 	&__icon {
-		display: inline-block;
+		display: none;
 		margin-right: 10px;
 		fill: currentColor;
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+		}
 	}
 
 	&__icon:hover {

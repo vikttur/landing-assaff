@@ -17,18 +17,18 @@
 			display: none;
 		}
 	}
+}
 
-	&__contact {//
-		// display: flex;
-		// flex-direction: column;
-		margin-left: auto;
+.header__nav-and-contacts .contacts {
+	margin-left: auto;
+	
 
-		@media screen and (max-width: 767px) {
-			display: none;
-		}
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 
-		@media screen and (min-width: 1200px) {
-			flex-direction: row;
-		}
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		gap: 30px;
 	}
 }
