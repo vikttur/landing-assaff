@@ -54,6 +54,20 @@
 		transform: translateX(0);
 	}
 
+
+
+	// &__link {
+	// 	color: var(--color-header);
+	// }
+
+	& .menu-toggle {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+}
+
+.menu-container .navigation {
 	&__item:not(:last-child) {
 		margin-bottom: 18px;
 	}
@@ -63,18 +77,8 @@
 	}
 
 	&__link {
-		color: var(--color-header);
-	}
-
-	&__text-nav {
 		font-size: 30px;
 		line-height: 1.18;
-	}
-
-	& .menu-toggle {
-		position: absolute;
-		top: 16px;
-		right: 16px;
 	}
 }
 
