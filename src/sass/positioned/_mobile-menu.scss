@@ -66,23 +66,23 @@
 		color: var(--color-header);
 	}
 
-	&__contact {
-		display: flex;
-		flex-direction: column;
-	}
+	// &__contact {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
 
 	&__text-nav {
 		font-size: 30px;
 		line-height: 1.18;
 	}
 
-	&__text-tel {
+	&__text-tel {//
 		font-size: 20px;
 		line-height: 1.18;
 		color: var(--color-accent);
 	}
 
-	&__text-mail {
+	&__text-mail {//
 		font-size: 20px;
 		line-height: 1.17;
 		color: var(--color-main);
