@@ -1,7 +1,7 @@
 .footer {
-	padding: 10px;
 	background-color: var(--color-bgr-footer);
 	text-align: center;
+	padding: 20px;
 
 	&__container {
 		@extend %container;
@@ -39,29 +39,8 @@
 		color: var(--color-bgr-head);
 	}
 
-	&__link-icon {
-		background-color: var(--color-bgr-icon);
-		color: var(--color-bgr-head);
-
-		transition:
-			background-color var(--time-animation) var(--timing-function),
-			color var(--time-animation) var(--timing-function);
-	}
-
-	&__link-icon:hover,
-	&__link-icon:focus {
-		background-color: var(--color-accent);
-	}
-
 	@media screen and (min-width: 1200px) {
 		text-align: left;
-	}
-}
-
-.social__icon {
-	.footer__link-icon:hover &,
-	.footer__link-icon:focus & {
-		fill: var(--color-bgr-head);
 	}
 }
 

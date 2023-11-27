@@ -51,20 +51,20 @@
 		line-height: 1.88;
 	}
 
-	&__link {
-		background-color: var(--color-bgr-card);
-		color: var(--color-icon);
+	// &__link {
+	// 	background-color: var(--color-bgr-card);
+	// 	color: var(--color-icon);
 
-		transition:
-			background-color var(--time-animation) var(--timing-function),
-			color var(--time-animation) var(--timing-function);
-	}
+	// 	transition:
+	// 		background-color var(--time-animation) var(--timing-function),
+	// 		color var(--time-animation) var(--timing-function);
+	// }
 
-	&__link:hover,
-	&__link:focus {
-		background-color: var(--color-accent);
-		color: var(--color-bgr-head);
-	}
+	// &__link:hover,
+	// &__link:focus {
+	// 	background-color: var(--color-accent);
+	// 	color: var(--color-bgr-head);
+	// }
 
 	@media screen and (min-width: 768px) {
 		&__list {
@@ -81,12 +81,5 @@
 		&__list {
 			flex-wrap: nowrap;
 		}
-	}
-}
-
-.social__icon {
-	.team__link:hover &,
-	.team__link:focus & {
-		fill: var(--color-bgr-head);
 	}
 }
