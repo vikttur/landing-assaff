@@ -1,5 +1,9 @@
 .comments {
 	@extend %section;
+
+	&__heading {
+		@extend %section-heading;
+	}
 	
 	&__container {
 		@extend %container;

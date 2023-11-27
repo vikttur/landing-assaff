@@ -1,5 +1,9 @@
 .gallery {
 	@extend %section;
+
+	&__heading {
+		@extend %section-heading;
+	}
 }
 
 .gallery-slider {

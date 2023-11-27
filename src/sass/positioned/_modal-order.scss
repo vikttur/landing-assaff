@@ -29,7 +29,6 @@
 	}
 
 	font-family: inherit;
-	
 
 	background: var(--color-bgr-head);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -102,14 +101,12 @@
 	}
 }
 
-.field__contact {
-	margin-bottom: 10px;
-}
+.order-form {
+	&__contact {
+		margin-bottom: 10px;
+	}
 
-.field__textarea {
-	margin-bottom: 20px;
-}
-
-.consent {
-	margin-bottom: 30px;
+	&__textarea {
+		margin-bottom: 20px;
+	}
 }

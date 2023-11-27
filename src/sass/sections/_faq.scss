@@ -1,5 +1,9 @@
 .faq {
 	@extend %section;
+
+	&__heading {
+		@extend %section-heading;
+	}
 	
 	// &__list {
 	// 	display: flex;
