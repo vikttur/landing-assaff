@@ -1,0 +1,40 @@
+.background-img {
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('/src/images/background/img-bgr-940.jpg');
+    background-size: 100vw;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-940.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/background/img-bgr-1200.jpg');
+    background-size: 100vw;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-1200.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/images/background/img-bgr-1200.jpg');
+    background-size: 1300px 1350px;
+		background-size: 100vw;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/background/img-bgr-1200.jpg');
+    }
+  }
+}
