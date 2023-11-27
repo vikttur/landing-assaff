@@ -86,27 +86,40 @@
 	}
 }
 
-%button {
+%button-main {
 	display: inline-block;
-	border: 1px solid transparent;
-	border-radius: 4px;
 
+	border: none;
+	border-radius: 4px;
+	background-color: var(--color-accent);
+	
+	font-weight: 700;
 	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--color-bgr-head);
 
 	cursor: pointer;
 }
 
-%button-main {
-	@extend %button;
-	background-color: var(--color-accent);
-	
-	font-weight: 700;
-	line-height: 1.88;
-	letter-spacing: 0.06em;
-	color: var(--color-bgr-head);
-	
-	border: none;
+%button {
+	@extend %button-main;
+	min-width: 200px;
+	padding: 10px 32px;
+
+	box-shadow: 0;
+	transition:
+		background-color var(--time-animation) var(--timing-function),
+		box-shadow var(--time-animation) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-btn-active);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	}
 }
+
+
 
 // %visually-hidden {
 // 	position: absolute;

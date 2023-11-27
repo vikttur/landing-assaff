@@ -1,4 +1,8 @@
 .order-form {
+	&__button {
+		@extend %button;
+	}
+	
 	.backdrop.is-hidden & {
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(0);
@@ -54,23 +58,6 @@
 			font-size: 20px;
 			line-height: 1.15;
 		}
-	}
-
-	&__submit-button {
-		@extend %button-main;
-		border: none;
-	
-		min-width: 200px;
-		padding: 10px 52px;
-
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		transition:
-			background-color var(--time-animation) var(--timing-function);
-	}
-	
-	&__submit-button:hover,
-	&__submit-button:focus {
-		background-color: var(--color-btn-active);
 	}
 
 	&__close-button {

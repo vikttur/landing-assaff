@@ -1,6 +1,10 @@
 .hero {
 	@extend %section;
 
+	&__button {
+		@extend %button;
+	}
+	
 	max-width: 100%;
 	padding: 20px;
 
@@ -54,22 +58,22 @@
 		}
 	}
 
-	&__button {
-		@extend %button-main;
-		min-width: 216px;
-		padding: 10px 32px;
+	// &__button {
+	// 	@extend %button-main;
+	// 	min-width: 200px;
+	// 	padding: 10px 32px;
 
-		box-shadow: 0;
-		transition:
-			background-color var(--time-animation) var(--timing-function),
-			box-shadow var(--time-animation) var(--timing-function);
-	}
+	// 	box-shadow: 0;
+	// 	transition:
+	// 		background-color var(--time-animation) var(--timing-function),
+	// 		box-shadow var(--time-animation) var(--timing-function);
+	// }
 
-	&__button:hover,
-	&__button:focus {
-			background-color: var(--color-btn-active);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	}
+	// &__button:hover,
+	// &__button:focus {
+	// 		background-color: var(--color-btn-active);
+	// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	// }
 
 	@media screen and (min-width: 768px) {
 		height: 400px;

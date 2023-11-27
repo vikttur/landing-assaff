@@ -4,6 +4,10 @@
 	&__heading {
 		@extend %section-heading;
 	}
+
+	&__container {
+		@extend %container;
+	}
 }
 
 .gallery-slider {
