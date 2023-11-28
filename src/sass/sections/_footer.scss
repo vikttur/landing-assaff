@@ -1,7 +1,6 @@
 .footer {
 	background-color: var(--color-bgr-footer);
 	text-align: center;
-	padding: 20px;
 
 	&__container {
 		@extend %container;
@@ -13,18 +12,6 @@
 			text-align: left;
 		}
 	}
-
-	// &__link-address {
-	// 	color: var(--color-bgr-head);
-
-	// 	transition:
-	// 		color var(--time-animation) var(--timing-function);
-	// 	}
-
-	// &__link-address:hover,
-	// &__link-address:focus {
-	// 	color: var(--color-accent);
-	// }
 
 	&__header {
 		display: block;

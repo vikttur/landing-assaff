@@ -1,12 +1,17 @@
 .hero {
 	@extend %section;
 
+	
+	&__container {
+		@extend %container;
+	}
+
 	&__button {
 		@extend %button;
 	}
 	
 	max-width: 100%;
-	padding: 20px;
+	// padding: 20px;
 
 	background-color: var(--color-bgr-hero);
 	background-position: top;
@@ -29,10 +34,6 @@
 						var(--color-gradient)),
 					url("/src/images/hero/hero_480@2x.jpg");
 			}
-	}
-
-	&__container {
-		@extend %container;
 	}
 	
 	&__heading {
@@ -57,23 +58,6 @@
 			letter-spacing: 2.64px;
 		}
 	}
-
-	// &__button {
-	// 	@extend %button-main;
-	// 	min-width: 200px;
-	// 	padding: 10px 32px;
-
-	// 	box-shadow: 0;
-	// 	transition:
-	// 		background-color var(--time-animation) var(--timing-function),
-	// 		box-shadow var(--time-animation) var(--timing-function);
-	// }
-
-	// &__button:hover,
-	// &__button:focus {
-	// 		background-color: var(--color-btn-active);
-	// 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-	// }
 
 	@media screen and (min-width: 768px) {
 		height: 400px;

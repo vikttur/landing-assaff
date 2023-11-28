@@ -4,7 +4,11 @@
 	&__heading {
 		@extend %visually-hidden;
 	}
-	
+
+	&__container {
+		@extend %container;
+	}
+
 	&__list {
 		display: flex;
 		justify-content: center;
@@ -17,10 +21,6 @@
 			flex-direction: row;
 			gap: 30px;
 		}
-	}
-
-	&__container {
-		@extend %container;
 	}
 
 	&__item {
