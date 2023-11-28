@@ -65,6 +65,13 @@
 		color: var(--color-footer-contact);
 	}
 
+	& .contacts__link:hover,
+	& .contacts__link:focus { 
+		color: var(--color-accent);
+	}
+
+
+
 	& .contacts__icon  {
 		display: none;
 	}

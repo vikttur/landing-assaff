@@ -20,6 +20,14 @@
 	&__icon {
 		fill: currentColor;
 	}
+
+	& .logo {
+		padding-right: 88px;
+
+		@media screen and (min-width: 1200px) {
+			padding-right: 93px;
+		}
+	}
 }
 
 .header__nav .navigation {
@@ -28,16 +36,27 @@
 	}
 }
 
-.header__nav-and-contacts .contacts {
-	margin-left: auto;
-	
+.header__nav-and-contacts {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
 
-	@media screen and (max-width: 767px) {
-		display: none;
-	}
 
-	@media screen and (min-width: 768px) {
-		flex-direction: row;
-		gap: 30px;
+	& .contacts {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+
+		@media screen and (min-width: 768px) {
+			flex-direction: column;
+			margin-left: auto;
+			gap: 8px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+			gap: 30px;
+		}
 	}
-}
+} 

@@ -8,7 +8,7 @@
 	padding: 94px 15px;
 	overflow-y: scroll;
 
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: var(--color-bgr-separator);
 	opacity: 1;
 	transition:
 		opacity var(--time-animation) var(--timing-function);

@@ -2,7 +2,7 @@
 	@extend %section;
 
 	&__heading {
-		@extend %section-heading;
+		@extend %visually-hidden;
 	}
 	
 	&__list {

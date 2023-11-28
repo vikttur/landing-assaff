@@ -3,22 +3,30 @@
 
 	&__item {
 		display: block;
+		// align-items: start;
 	}
 
 	&__link {
-		padding-top: 32px;
-		padding-bottom: 32px;
-
 		font-weight: 500;
 		line-height: 1.14;
 		letter-spacing: 0.03em;
 		color: var(--color-header);
+
+		@media screen and (min-width: 480px) {
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
 	}
-	
-	@media screen and (min-width: 768px) {
+
+	@media screen and (min-width: 480px) {
 			display: flex;
 			padding: 0;
-			justify-content: center;
+			// justify-content: center;
 	}
 
 	&__link:hover,
