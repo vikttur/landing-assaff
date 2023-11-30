@@ -1,22 +1,16 @@
-
 <header class="header" id="header">
 	<div class="header__container">
-		<img src="./images/logo.svg" alt="" width="30" height="30" alt="гітара"/>
+		<img src="./images/logo.svg" width="30" height="30" alt="гітара">
 
 		<div class="header__nav-and-contacts">
 			<nav class="header__nav">
-				<!-- <div class="header-logo"> -->
 					<include src="./partials/components/logo.html"></include>
-				<!-- </div> -->
-
-				<!-- <div class="header__navigation"> -->
 					<include src="./partials/components/navigation.html"></include>
-				<!-- </div> -->
 			</nav>
 			<include src="./partials/components/contacts.html"></include>
 		</div>
 
-		<button class="header__btn-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+		<button class="header__btn-open js-open-menu" aria-expanded="false">
 			<svg class="header__icon" width="40" height="40" aria-label="кнопка відкриття мобільного меню">
 				<use href="./images/icons.svg#menu-open"></use>
 			</svg>
