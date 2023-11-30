@@ -1,0 +1,3 @@
+var e,t=document.querySelector("[data-one-spoiler]");(e=t.querySelectorAll("[data-spoiler]")).length>0&&e.forEach(function(e){e.classList.contains("_active")||(e.nextElementSibling.hidden=!0)}),t.addEventListener("click",function(e){var t=e.target;if(t.hasAttribute("data-spoiler")){var a,l=t.closest("[data-one-spoiler]");t.classList.contains("_active")||(a=l.querySelector("[data-spoiler]._active"))&&(a.classList.remove("_active"),n(a.nextElementSibling)),t.classList.toggle("_active"),i(t.nextElementSibling),e.preventDefault()}});var i=function(e){return e.hidden?a(e):n(e)},n=function(e){e.hidden=!0},a=function(e){e.hidden=!1};//# sourceMappingURL=index.de141a0c.js.map
+
+//# sourceMappingURL=index.de141a0c.js.map
